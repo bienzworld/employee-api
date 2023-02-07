@@ -1,52 +1,35 @@
-### How to use this spring-boot project
+# Employee API
+* This API contains Create, Read, Update and Delete of Employees information.
+* It works on "java-challenge" repository.
 
-- Install packages with `mvn package`
-- Run `mvn spring-boot:run` for starting the application (or use your IDE)
+## How to use this spring-boot project
+* Install packages with `mvn package`
+* Run `mvn spring-boot:run` for starting the application (or use your IDE)
 
-Application (with the embedded H2 database) is ready to be used ! You can access the url below for testing it :
+### Application (with the embedded H2 database) is ready to be used ! You can access the url below for testing it :
+* Swagger UI : http://localhost:8080/swagger-ui.html
+* H2 UI : http://localhost:8080/h2-console
 
-- Swagger UI : http://localhost:8080/swagger-ui.html
-- H2 UI : http://localhost:8080/h2-console
-
-> Don't forget to set the `JDBC URL` value as `jdbc:h2:mem:testdb` for H2 UI.
-
-
-
-### Instructions
-
-- download the zip file of this project
-- create a repository in your own github named 'java-challenge'
-- clone your repository in a folder on your machine
-- extract the zip file in this folder
-- commit and push
-
-- Enhance the code in any ways you can see, you are free! Some possibilities:
-  - Add tests
-  - Change syntax
-  - Protect controller end points
-  - Add caching logic for database calls
-  - Improve doc and comments
-  - Fix any bug you might find
-- Edit readme.md and add any comments. It can be about what you did, what you would have done if you had more time, etc.
-- Send us the link of your repository.
-
-#### Restrictions
+### Restrictions
 - use java 8
 
+## Features
+<table>
+  <tr><th>No</th><th>Feature</th><th>Method</th><th>URI</th><th>Note</th></tr>
+  <tr><td>1</td><td>Get All Employees Info</td><td>GET</td><td>/api/v1/employees</td><td>Gets all the record of employees information</td></tr>
+  <tr><td>2</td><td>Get Specific Employees Info By Id</td><td>GET</td><td>/api/v1/employees/{employeeId}</td><td>Get specific employees info using employees id</td></tr>
+  <tr><td>3</td><td>Insert Employee Record on Database</td><td>POST</td><td>/api/v1/employees</td><td>Insert new employee info</td></tr>
+  <tr><td>4</td><td>Update Employee Info</td><td>PUT</td><td>/api/v1/employees/{employeeId}</td><td>Update employees info using employees id</td></tr>
+  <tr><td>5</td><td>Delete Employee Info</td><td>DELETE</td><td>/api/v1/employees/{employeeId}</td><td>Delete a record on Employee table using employees id</td></tr>
+</table>
 
-#### What we will look for
-- Readability of your code
-- Documentation
-- Comments in your code 
-- Appropriate usage of spring boot
-- Appropriate usage of packages
-- Is the application running as expected
-- No performance issues
+## How to start development
+1. Get source code from [repository](https://github.com/bienzworld/java-challenge.git)
+    ```bash
+    $ git clone https://github.com/bienzworld/java-challenge.git
+    ``` 
 
-#### Your experience in Java
-
-Please let us know more about your Java experience in a few sentences. For example:
-
-- I have 3 years experience in Java and I started to use Spring Boot from last year
-- I'm a beginner and just recently learned Spring Boot
-- I know Spring Boot very well and have been using it for many years
+#### My experience in Java
+- My experience in Java lies mostly lies mostly in full-stack development. But I enjoy working more at the backend. 
+- Most of my projects in regards to Java are creating internal and external API. 
+- I have about 9+ years of work experience in web and software development.

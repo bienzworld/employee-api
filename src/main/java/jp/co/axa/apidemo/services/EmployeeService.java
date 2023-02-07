@@ -1,18 +1,21 @@
 package jp.co.axa.apidemo.services;
 
 import jp.co.axa.apidemo.entities.Employee;
+import jp.co.axa.apidemo.exception.EmployeeInfoException;
+import jp.co.axa.apidemo.response.BaseResponse;
+import jp.co.axa.apidemo.response.EmployeeResponse;
 
 import java.util.List;
 
 public interface EmployeeService {
 
-    public List<Employee> retrieveEmployees();
+    public EmployeeResponse retrieveEmployees() throws EmployeeInfoException;
 
-    public Employee getEmployee(Long employeeId);
+    public EmployeeResponse getEmployee(Long employeeId) throws EmployeeInfoException;
 
-    public void saveEmployee(Employee employee);
+    public BaseResponse saveEmployee(Employee employee);
 
-    public void deleteEmployee(Long employeeId);
+    public BaseResponse deleteEmployee(Long employeeId);
 
-    public void updateEmployee(Employee employee);
+    public BaseResponse updateEmployee(long employeeId, Employee employee);
 }

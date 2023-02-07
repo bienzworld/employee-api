@@ -2,6 +2,7 @@ package jp.co.axa.apidemo.entities;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.lang.NonNull;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -34,5 +35,15 @@ public class Employee {
     @Setter
     @Column(name="DEPARTMENT")
     private String department;
+
+    public Employee() {
+    }
+
+    public Employee(@NonNull long emp_id, @NonNull String emp_name, int emp_salary, String emp_dep) {
+        this.id = emp_id;
+        this.name = emp_name;
+        this.salary = emp_salary;
+        this.department = emp_dep;
+    }
 
 }
