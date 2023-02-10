@@ -30,6 +30,6 @@
     ``` 
 
 #### My experience in Java
-- My experience in Java lies mostly lies mostly in full-stack development. But I enjoy working more at the backend. 
-- Most of my projects in regards to Java are creating internal and external API. 
+- My experience in Java lies mostly in full-stack development. But I enjoy working more at the backend. 
+- Most of my projects in regards to Java are creating internal and external API, new feature and frontend. 
 - I have about 9+ years of work experience in web and software development.
